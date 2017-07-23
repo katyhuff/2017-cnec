@@ -1,0 +1,98 @@
+%        File: 2017-cnec.tex
+%     Created: Fri Jul 21 09:00 AM 2017 E
+% Last Change: Fri Jul 21 09:00 AM 2017 E
+%
+\documentclass[letterpaper]{article}
+\usepackage[top=1.0in,bottom=1.0in,left=1.0in,right=1.0in]{geometry}
+\usepackage{verbatim}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[usenames]{color}
+\usepackage[hidelinks]{hyperref}
+\def\thesection       {\arabic{section}}
+\def\thesubsection     {\thesection.\alph{subsection}}
+\usepackage{xspace}
+\newcommand{\Cyclus}{\textsc{Cyclus}\xspace}%
+\usepackage[acronym,toc]{glossaries}
+\include{acros}
+\makeglossaries
+
+\author{Kathryn Huff\\
+        Blue Waters Assistant Professor\\
+        Department of Nuclear, Plasma, and Radiological Engineering\\
+        University of Illinois at Urbana-Champaign\\
+         \href{mailto:kdhuff@illinois.edu}{\texttt{kdhuff@illinois.edu}}}
+
+\title{Fuel Cycle Simulation Capability for Signature Modeling}
+\begin{document}
+\maketitle
+\section{Project Description}
+
+Fuel cycle facility models will be developed for use with the agent-based 
+\Cyclus fuel cycle simulator \cite{huff_fundamental_2016}. These \Cyclus
+\emph{archetypes} will significantly improve the fidelity of nascent \Cyclus
+capabilities for characterizing \gls{SNM} signature and diversion detection
+sensitivity\cite{mcgarry_mbmore_2017}.  Students will develop
+\Cyclus-compatible, dynamically loadable, C++ shared-object libraries which
+model:
+\begin{itemize}
+\item A uranium enrichment facility based on the <+NAMEHERE+> multi-component 
+        formulation.
+\item An \gls{LWR} model with emphasis on disambiguation of secondary effluents 
+        such as $^{85}Kr$.?
+\item A reprocessing model with emphasis on disambiguation of non-raffinate 
+        effluent (such as?)?
+\end{itemize}
+
+These \emph{archetypes} will be used to demonstrate improved fidelity of 
+\Cyclus analysis related to detection of signatures indicative of \gls{SNM} or 
+\gls{SNM} diversion. 
+
+
+The primary goal is to enable users of the \Cyclus simulator, both scientists
+and students, to conduct more sophisticated dynamic simulations relevant to
+non-proliferation. Specifically, increased mass flow fidelity at the facility
+model (\emph{archetype}) level will enable users to answer novel questions
+concerning intrinsic features of fuel cycle facility mass flows.
+\emph{Archetype} fidelity in this sense refers to the ability to capture the
+dominant physics of the particular facility technology at levels of detail
+appropriate to influence conclusions.
+
+\section{Relevance to CNEC}
+This work will improve the \Cyclus capability to characterize facilities which process
+\gls{SNM} and will train undergraduate students in modeling and simulation of
+the nuclear fuel cycle. A focus on modeling and simulation is in line with the 
+\gls{CNEC} \gls{SAM} thrust area. Simultaneously, application to signature and
+diversion detection sensitivity is relevant to \gls{SandO} thrust area goals. 
+
+\section{Tasks and Deliverables}
+
+The first task will be to implement a new multi-component enrichment archetype, 
+enabling dynamic simulations which distinguish fuel cycles. This work will build upon a well-tested multi-component enrichment  
+
+The second task will be to implement
+The success of this project will be measured in journal articles and conference 
+presentations, and student outcomes. Emphasis on practical preparation for 
+technical modeling and simulation will benefit from the experience of the 
+\gls{PI} in the area of scientific computing best practices 
+\cite{scopatz_effective_2015,wilson_best_2014,huff_lessons_2017,huff_case_2017}.
+
+All \emph{archetypes} developed in this work will be accompanied by sufficient documentation, testing, and integration with the simulator to enable reuse by other fuel cycle analysts\footnote{In accordance with the \Cyclus ecosystem, the products of this work will be BSD-3 licensed.}.
+\section{Budget}
+This work will require the effort of one graduate student for two years. If a 
+suitable graduate student cannot be identified, it will require the effort of 
+four undergraduate students, each working 20 hours per week, over the course of 
+the 2017-2018 academic year. It will additionally require one week of summer 
+salary for the PI. Finally, it will require travel funding for one 
+student and the PI to present their work in a conference setting annually. 
+
+As requested, the budget for this project is attached in Excel format.
+
+\bibliographystyle{ieeetr}
+\bibliography{2017-cnec-signatures}
+\end{document}
+
+
