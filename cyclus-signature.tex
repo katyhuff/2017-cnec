@@ -26,49 +26,60 @@
         University of Illinois at Urbana-Champaign\\
          \href{mailto:kdhuff@illinois.edu}{\texttt{kdhuff@illinois.edu}}}
 
-\title{Fuel Cycle Simulation Capability for Signature Modeling}
+\title{Fuel Cycle Simulation Capability for Signatures and Observables}
 \begin{document}
 \maketitle
 \section{Project Description}
 
-Fuel cycle facility models will be developed for use with the agent-based 
-\Cyclus fuel cycle simulator \cite{huff_fundamental_2016}. These \Cyclus
-\emph{archetypes} will significantly improve the fidelity of nascent \Cyclus
-capabilities for characterizing \gls{SNM} signature and diversion detection
-sensitivity\cite{mcgarry_mbmore_2017}.  Students will develop
-\Cyclus-compatible, dynamically loadable, C++ shared-object libraries which
-model:
-\begin{itemize}
-\item A uranium enrichment facility based on the <+NAMEHERE+> multi-component 
-        formulation.
-\item An \gls{LWR} model with emphasis on disambiguation of secondary effluents 
-        such as $^{85}Kr$.?
-\item A reprocessing model with emphasis on disambiguation of non-raffinate 
-        effluent (such as?)?
-\end{itemize}
+Nuclear power plants themselves are typically considered a lower proliferation risk than other fuel cycle facilities, particluarly those which produce or recycle fuel \cite{sciences_america_2009}. Accordingly, dynamic fuel cycle facility modeling is essential to assessment of proliferation risk, safeguardability, and material accountancy robustness. 
+
+
+Students will develop fuel cycle facility models, or \emph{archetypes}, for use with the \Cyclus agent-based fuel cycle simulator \cite{huff_fundamental_2016}. These dynamically loadable, C++ shared-object libraries will capture material streams within myriad front-end and back-end fuel cycle facilities in support of nonproliferation-focused analyis.  
+Specifically, one graduate student and up to four undergraduate students will improve existing enrichment, reactor, and reprocessing facility models to better capture material flows which impact material accountancy or qualify as observable signatures. 
+
+Recent work \cite{mcgarry_mbmore_2017} has extended the \Cyclus fuel cycle
+simulator\cite{huff_fundamental_2016} ecosystem to include archetypes dedicated
+to modeling non-deterministic, nonproliferation-related treaty verification
+behavior in a simple enrichment facility. The proposed effort will
+significantly improve the fidelity of these capabilities for characterizing
+\gls{SNM} signature and diversion detection
+sensitivity\cite{mcgarry_mbmore_2017}.  \emph{Archetype} fidelity in this sense
+refers to the ability to capture the dominant physics of the particular
+facility technology at levels of detail appropriate to influence conclusions.
+
+Student effort will emphasize conventional fuel cycle facilities. However,
+students will also explore potential future technologies. For example, models
+to inform monitoring strategies for MSR online fuel reprocessing concepts will
+be approached. All of this work will support \Cyclus use cases focused on
+`shadow' fuel cycles\cite{shadow}, detection sensitivity\cite{mgarry}, and
+signature quantification\cite{sigs}.
+
+The resulting simulation library will enable users of the \Cyclus simulator,
+both scientists and students, to conduct more sophisticated dynamic simulations
+relevant to non-proliferation. Specifically, increased mass flow fidelity at
+the sub-facility level will enable users to answer novel questions concerning
+intrinsic features of fuel cycle facility mass flows.
+
+\section{Relevance to CNEC}
+This work will improve existing capabilities for characterization of facilities
+which process \gls{SNM}. Additionally, the research process will train undergraduate students in modeling and simulation of the nuclear fuel cycle as well as best practices for scientific computing \cite{wilson_best_2014}. 
+
+
+Application of the proposed capabilities to signature detection and diversion sensitivity is relevant to the \gls{CNEC} \gls{SandO} thrust area goals.  Simultaneously, this work has a core focus on modeling and simulation that is quite relevant to the \gls{CNEC} \gls{SAM} thrust area.  
+
+Finally, through direct collaboration with \Cyclus ecosystem community members at the national laboratories (including \gls{ORNL} and \gls{PNNL} in particular, students will be enabled to pursue internships with the national laboratories.
+
+\section{Tasks and Deliverables}
+
+A uranium enrichment facility based on the <+NAMEHERE+> multi-component formulation.
+
+An \gls{LWR} model with emphasis on disambiguation of secondary effluents such as $^{85}Kr$.?
+
+A reprocessing model with emphasis on disambiguation of non-raffinate effluent (such as?)?
 
 These \emph{archetypes} will be used to demonstrate improved fidelity of 
 \Cyclus analysis related to detection of signatures indicative of \gls{SNM} or 
 \gls{SNM} diversion. 
-
-
-The primary goal is to enable users of the \Cyclus simulator, both scientists
-and students, to conduct more sophisticated dynamic simulations relevant to
-non-proliferation. Specifically, increased mass flow fidelity at the facility
-model (\emph{archetype}) level will enable users to answer novel questions
-concerning intrinsic features of fuel cycle facility mass flows.
-\emph{Archetype} fidelity in this sense refers to the ability to capture the
-dominant physics of the particular facility technology at levels of detail
-appropriate to influence conclusions.
-
-\section{Relevance to CNEC}
-This work will improve the \Cyclus capability to characterize facilities which process
-\gls{SNM} and will train undergraduate students in modeling and simulation of
-the nuclear fuel cycle. A focus on modeling and simulation is in line with the 
-\gls{CNEC} \gls{SAM} thrust area. Simultaneously, application to signature and
-diversion detection sensitivity is relevant to \gls{SandO} thrust area goals. 
-
-\section{Tasks and Deliverables}
 
 The first task will be to implement a new multi-component enrichment archetype, 
 enabling dynamic simulations which distinguish fuel cycles. This work will build upon a well-tested multi-component enrichment  
@@ -81,6 +92,17 @@ technical modeling and simulation will benefit from the experience of the
 \cite{scopatz_effective_2015,wilson_best_2014,huff_lessons_2017,huff_case_2017}.
 
 All \emph{archetypes} developed in this work will be accompanied by sufficient documentation, testing, and integration with the simulator to enable reuse by other fuel cycle analysts\footnote{In accordance with the \Cyclus ecosystem, the products of this work will be BSD-3 licensed.}.
+
+
+\cite{case_proliferation_2011}
+Proliferation resistance and risk
+Laser enrichment
+quantification of uncertainty of proliferation risk assessment in nuclear fuel cycles
+host-state proliferation, non-peaceful uses
+for disambiguation of enrichment level, a model with detail at the cascade level is necessary
+
+
+
 \section{Budget}
 This work will require the effort of one graduate student for two years. If a 
 suitable graduate student cannot be identified, it will require the effort of 
