@@ -27,7 +27,7 @@
         University of Illinois at Urbana-Champaign\\
          \href{mailto:kdhuff@illinois.edu}{\texttt{kdhuff@illinois.edu}}}
 
-         \title{\vspace{-1in}Fuel Cycle Simulation Capability for Signatures and Observables}
+         \title{\vspace{-0.5in}Fuel Cycle Simulation Capability for Signatures and Observables}
 \begin{document}
 \maketitle
 \section{Project Description}
@@ -41,37 +41,41 @@ safeguardability, and material accountancy robustness.
 
 Students will develop fuel cycle facility models, or \emph{archetypes}, for use 
 with the \Cyclus agent-based fuel cycle simulator \cite{huff_fundamental_2016}. 
-These dynamically loadable, C++ shared-object libraries will capture material 
-streams within myriad front-end and back-end fuel cycle facilities in support 
-of nonproliferation-focused analysis.  Specifically, one graduate student and up 
-to four undergraduate students will improve existing enrichment, reactor, and 
-reprocessing facility models to better capture material flows which impact 
+These dynamically loadable, C++ shared-object libraries will 
+capture material streams within myriad front-end and back-end fuel cycle 
+facilities in support of nonproliferation-focused analysis.
+With increased model fidelity for enrichment, reactor, and reprocessing 
+facilities, \Cyclus simulations will better capture material flows which impact 
 material accountancy or qualify as observable signatures.  
 
-Recent work by McGarry et al. \cite{mcgarry_mbmore_2017} has extended the 
-\Cyclus fuel cycle simulator \cite{huff_fundamental_2016} ecosystem to include 
-archetypes dedicated to modeling non-deterministic, nonproliferation-related 
-treaty verification behavior in a simple enrichment facility. This proposal 
-will build upon that work.  The proposed effort will significantly improve the 
-fidelity of these capabilities for characterizing \gls{SNM} signature and 
-diversion detection sensitivity \cite{mcgarry_mbmore_2017}.  \emph{Archetype} 
-fidelity in this sense refers to the ability to capture the dominant physics of 
-the particular facility technology at levels of detail appropriate to influence 
-conclusions.
 
 Student effort will emphasize conventional fuel cycle facilities in support of 
 \Cyclus use cases focused on `shadow' fuel cycles, diversion detection, and 
-signature disambiguation (e.g.
-\cite{boyer_developing_2014}, \cite{hou_diversion_2016} 
-\cite{rossi_application_2015}, and \cite{yilmaz_online_2016}).  However, students will also explore potential future technologies and advanced fuel cycles such as \gls{MSR} online fuel reprocessing concepts, laser enrichment, etc.  The resulting simulation library will enable users of the \Cyclus simulator, both scientists and students, to conduct more sophisticated dynamic simulations relevant to non-proliferation (e.g.  systems assessment for safeguardability as in \cite{borrelli_approaches_2017}.  Specifically, increased mass flow fidelity at the sub-facility level will enable users to answer novel questions concerning intrinsic features of fuel cycle facility mass flows.
+signature disambiguation (e.g.  \cite{skutnik_assessment_2011}, \cite{boyer_developing_2014}, \cite{hou_diversion_2016} \cite{rossi_application_2015}, and \cite{yilmaz_online_2016}).  However, students will also explore potential 
+future technologies and advanced fuel cycles such as \gls{MSR} online fuel 
+reprocessing concepts, laser enrichment, etc.  The resulting simulation library 
+will enable users of the \Cyclus simulator, both scientists and students, to 
+conduct more sophisticated dynamic simulations relevant to non-proliferation 
+(e.g.  systems assessment for safeguardability as in 
+\cite{borrelli_approaches_2017}.  Specifically, increased mass flow fidelity at 
+the sub-facility level will enable users to answer novel questions concerning 
+intrinsic features of fuel cycle facility mass flows.  
+
+Recent work by McGarry et al. \cite{mcgarry_mbmore_2017} has extended the 
+\Cyclus fuel cycle simulator ecosystem to include 
+archetypes dedicated to modeling non-deterministic, nonproliferation-related 
+treaty verification behavior (e.g.  inspector swipe tests) in a simple 
+enrichment facility. This current proposal will complement that nascent work, 
+extending \Cyclus capabilities to enable characterization and disambiguation of 
+\gls{SNM} signatures and observables in myriad facilities.
 
 \section{Relevance to CNEC}
 This work will improve existing capabilities for characterization of facilities
 which process \gls{SNM}. Additionally, the research process will train 
 undergraduate and graduate students in modeling and simulation of the nuclear 
-fuel cycle.  Additionally, emphasis on student
-technical modeling and simulation skills will benefit from the experience of the 
-\gls{PI} in the area of scientific computing best practices 
+fuel cycle. This emphasis on training students in technical modeling and 
+simulation skills will rely on the experience of the 
+\gls{PI} in the area of scientific computing education and best practices 
 \cite{scopatz_effective_2015,wilson_best_2014,huff_lessons_2017,huff_case_2017}.
 
 Application of the proposed capabilities to signature detection and diversion 
@@ -84,14 +88,15 @@ at the national laboratories, including \gls{ORNL} and \gls{PNNL} in particular,
 
 \section{Tasks and Deliverables}
 
-At least eight new \Cyclus \emph{archetypes} will be developed according to the 
-schedule described in Figure \ref{fig:milestones}.  These \emph{archetypes} 
+At least eight new \Cyclus archetypes will be developed according to the 
+schedule described in Figure \ref{fig:milestones}.  These archetypes 
 will be used to demonstrate improved fidelity of \Cyclus analysis related to 
 detection of signatures indicative of \gls{SNM} or \gls{SNM} diversion. 
-All \emph{archetypes} developed in this work will be accompanied by sufficient 
+All archetypes developed in this work will be accompanied by sufficient 
 documentation, testing, and integration with the simulator to enable reuse by 
 other fuel cycle analysts\footnote{In accordance with the \Cyclus ecosystem, 
-the products of this work will be BSD-3 licensed.}.
+the products of this work will be developed in open source repositories under 
+BSD-3 licenses.}.
 
 
 \begin{figure}[htbp!]
@@ -114,7 +119,7 @@ to potentially disambiguate civilian power generation signatures from those
 generated by separations and reprocessing activities. This milestone will 
 accordingly include detailed PUREX and UREX+ separations models as well as 
 fidelity improvements to existing \gls{PWR} models. Detail in all of these 
-facility \emph{archetypes} will capture release streams of disambiguating 
+facility archetypes will capture release streams of disambiguating 
 isotopes such as $^{85}Kr$, $^{135}Xe$, and $^{133}Xe$ 
 \cite{kalinowski_isotopic_2006,kemp_environmental_2016}.
 
@@ -142,10 +147,10 @@ per year. If a suitable graduate student cannot be identified in the 2017-2018
 academic year, the work of the graduate student can be conducted for similar 
 cost by four undergraduate students, each working 20 hours per week.  
 
-Publication costs assume one 20 page 
-article per year at a cost of \$50 per page.  Finally, this work will require 
-travel funding for the graduate student and the \gls{PI} to present their work in a conference setting annually.  
-
+Publication costs assume two 20-page journal articles in the first year and one 
+20-page article in the second year, at a cost of \$50 per page.  Finally, this 
+work will require travel funding for the graduate student and the \gls{PI} to 
+present their work in a conference setting annually.  
 
 \end{document}
 
